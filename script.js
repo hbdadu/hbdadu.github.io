@@ -1,5 +1,5 @@
 const audioPlayer = document.createElement("audio");
-audioPlayer.src = "/Users/anubhavshankar/Desktop/MusicPlayer/aankhon.mp3";
+audioPlayer.src = "aankhon.mp3";
 audioPlayer.preload = "metadata";
 let isPlaying = false;
 
