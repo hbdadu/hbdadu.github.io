@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HBD ADU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="/Users/anubhavshankar/Desktop/MusicPlayer/purpleheart.png">
+</head>
+<body>
+      <div class="container">
+        <audio id="audioPlayer">
+            <source src="/Users/anubhavshankar/Desktop/MusicPlayer/aankhon.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="album-art flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!-- Image on the front -->
+              <img width="320px" height="320px" class="rounded-corners" src="/Users/anubhavshankar/Desktop/MusicPlayer/AduAankhon.jpeg" alt="Front Image">
+            </div>
+            <div class="flip-card-back">
+              <!-- Image on the back -->
+              <img width="320px" height="320px" class="rounded-corners" src="/Users/anubhavshankar/Desktop/MusicPlayer/AduSongPlayer.JPG" alt="Back Image">
+            </div>
+          </div>
+        </div>
+
+        <div class="song-details">
+            <h2 class="song-title">Aankhon Se Batana</h2>
+            <p class="artist-name">Cover by Anubhav  |  Dikshant</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <div class="time-stamp">
+            <span class="elapsed-time">00:00</span>
+            <span class="total-time">00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="skip-back" id="skipBackwardButton">&#x23EE;</button>
+            <button class="play-pause" id="playPauseButton">&#9654;</button>
+            <button class="skip-forward">&#x23ED;</button>
+        </div>
+
+        <div class="happy-birthday">
+            <p>Happy Birthday Adu&nbsp;&nbsp;&#128156;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;June 9, 2023</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
