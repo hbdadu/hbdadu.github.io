@@ -71,7 +71,13 @@ img.rounded-corners {
     font-size: 16px;
     margin: 10px 0;
     color: #967bb6;
+    text-decoration: none;
 }
+
+.artist-name:hover {
+text-decoration: none;
+}
+
 
 .progress-bar {
     width: 80%;
