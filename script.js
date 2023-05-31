@@ -5,6 +5,7 @@ let isPlaying = false;
 
 const skipBackwardButton = document.getElementById("skipBackwardButton");
 const playPauseButton = document.getElementById("playPauseButton");
+const skipForwardButton = document.getElementById("skipForwardButton");
 const progressBar = document.querySelector(".progress-bar");
 const progress = document.querySelector(".progress");
 const elapsedTime = document.querySelector(".elapsed-time");
@@ -28,6 +29,14 @@ playPauseButton.addEventListener("click", () => {
         playPauseButton.innerHTML = "&#10074;&#10074;"; // Change button text to pause icon
     }
     isPlaying = !isPlaying;
+});
+
+skipForwardButton.addEventListener("click", () => {
+    audioPlayer.currentTime = audioPlayer.duration; // Set audio to the end
+    if (isPlaying) {
+        audioPlayer.pause();
+        playPauseButton.innerHTML = "&#9658;"; // Change button text to pause icon
+    }
 });
 
 audioPlayer.addEventListener("timeupdate", () => {
