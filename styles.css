@@ -179,7 +179,7 @@ text-decoration: none;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 355px;
-  height: 315px;
+  height: 305px;
   background-color: #dfdfdf;
   border-radius: 10px;
 }
@@ -261,7 +261,7 @@ body {
   height: 200px;
   width: 200px;
   justify-content: center;
-  margin: 0 1rem;
+  margin: 0 5px;
   position: relative;
   scroll-snap-align: start;
   transform: scale(1);
