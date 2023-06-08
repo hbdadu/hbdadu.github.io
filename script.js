@@ -1,6 +1,6 @@
 const audioPlayer = document.createElement("audio");
 audioPlayer.src = "aankhonCover.mp3";
-audioPlayer.preload = "metadata";
+audioPlayer.preload = "auto";
 let isPlaying = false;
 
 const skipBackwardButton = document.getElementById("skipBackwardButton");
