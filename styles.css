@@ -221,9 +221,9 @@ border-radius: 8px;
 background: #69567f;
 }
 
-/*audio::-webkit-media-controls-panel {
+audio::-webkit-media-controls-panel {
   background-color: #967bb6;
-}*/
+}
 
 .audio_box{
   margin-top: 40px;
