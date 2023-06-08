@@ -186,7 +186,7 @@ text-decoration: none;
 .lyric_box{
   margin-bottom: 10px;
   width: 355px;
-  height: 405px;
+  height: 550px;
   background-color: #dfdfdf;
   border-radius: 10px;
   overflow: scroll;
@@ -218,4 +218,12 @@ border-radius: 8px;
 
 ::-webkit-scrollbar-thumb:hover {
 background: #69567f;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #967bb6;
+}
+
+.audio_box{
+  margin-top: 40px;
 }
