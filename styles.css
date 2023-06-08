@@ -13,8 +13,6 @@
     border-radius: 20px;
 }
 
-/* CSS style for Index.html */
-
 .album-art {
     width: 320px;
     height: 320px;
@@ -22,6 +20,26 @@
     border-radius: 20px;
     margin: 20px auto 0;
     perspective: 1000px;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.back-icon {
+      width: 22px;
+      height: 22px;
+}
+
+.back-link {
+      text-decoration: none;
+      font-family: Avenir, sans-serif;
+      font-size: 16px;
+      color: #967bb6;
 }
 
 img.rounded-corners {
