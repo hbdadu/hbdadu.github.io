@@ -11,6 +11,49 @@ const progress = document.querySelector(".progress");
 const elapsedTime = document.querySelector(".elapsed-time");
 const totalTime = document.querySelector(".total-time");
 
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 26, 2024 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("counter").innerHTML = days + " days " + hours + " hours "
+  + minutes + " min " + seconds + " sec ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("counter").innerHTML = "You're Here!";
+  }
+}, 1000);
+
+document.getElementById('hideButton').addEventListener('click', function() {
+  var announcement = document.getElementById('announce');
+  var content = document.getElementById('content');
+
+  if (announcement.style.display !== 'none') {
+    announcement.style.display = 'none';
+    content.style.display = 'block';
+    this.textContent = 'Show Container';
+  } else {
+    announcement.style.display = 'block';
+    content.style.display = 'none';
+    this.textContent = 'Hide Container';
+  }
+});
 
 skipBackwardButton.addEventListener("click", () => {
     audioPlayer.currentTime = 0; // Reset the audio to the beginning

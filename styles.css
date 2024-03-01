@@ -13,6 +13,62 @@
     border-radius: 20px;
 }
 
+.announce-container {
+    position: relative;
+    margin: 0px;
+    width: 375px;
+    height: 667px;
+    background-color: #967bb6;
+    padding-top: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.announce-button {
+  background-color: #e7e7e7; color: black; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: #967bb6;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 50px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.announcement{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 50%;
+  line-height: 1.25;
+  padding: 0px;
+}
+
+.count-down{
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.counter{
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  display: none;
+}
+
 .album-art {
     width: 320px;
     height: 320px;
